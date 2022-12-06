@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    
+    <title>Pop culture Quiz</title>
+</head>
+<body class="my-4 d-flex flex-column align-items-center">
+    <div class="jumbotron-container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Welcome to Pop Culture Trivia</h1>
+            <p class="lead">Get your drinks and your popcorn and get ready for the best pop culture quiz!</p>
+            <hr> 
+            <p>Press the start button to begin the quiz.</p>
+            <p>Good Luck!</p>
+            <button class="btn btn-lg" href="#quiz" role="button">Start Quiz</button>
+        </div>
+    </div>
+    <div id="quiz" class="card text-center">
+        <img class="card-img" src="" alt="">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-4">Quiz Question</h1>
+            <p class="card-text">
+                <input type="radio" id="a" name="answer" class="answer">
+                <label class="mb-3" for="a" id="a-text">Question</label><br>
+
+                <input type="radio" id="b" name="answer" class="answer">
+                <label class="mb-3" for="b" id="b-text">Question</label><br>
+
+                <input type="radio" id="c" name="answer" class="answer">
+                <label class="mb-3" for="c" id="c-text">Question</label><br>
+
+                <input type="radio" id="d" name="answer" class="answer">
+                <label class="mb-3" for="d" id="d-text">Question</label><br>
+            </p>
+            <button class="btn submitBtn" role="button">Submit Answer</button>
+        </div>
+        
+    </div>
+    <div id="result" class="">
+        <span>Your Score is</span>
+        <button class="btn btn-lg" role="button">Play Again</button>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
